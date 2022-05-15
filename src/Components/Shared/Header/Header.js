@@ -22,9 +22,14 @@ const Header = () => {
 
                     </Nav>
                     <Nav>
-                        <Nav.Link as={Link} to="home#services" className='text-white fw-bold'>Services</Nav.Link>
-                        <Nav.Link as={Link} to="/about" className='text-white fw-bold'>About</Nav.Link>
+                        <Nav.Link as={Link} to="home#items" className='text-white fw-bold'>Items</Nav.Link>
                         <Nav.Link as={Link} to="/blogs" className='text-white fw-bold'>Blogs</Nav.Link>
+                        {
+                            user && <>
+                                <Nav.Link as={Link} to="/additem" className='text-white fw-bold'>Add Item</Nav.Link>
+                                <Nav.Link as={Link} to="/manageitem" className='text-white fw-bold'>Manage Item</Nav.Link>
+                            </>
+                        }
 
                         {
                             user ?

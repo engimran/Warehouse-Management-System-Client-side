@@ -3,12 +3,19 @@ import React from 'react';
 const Blogs = () => {
     return (
         <div>
-            <h3>***Difference between authorization and authentication</h3>
-            <p>উত্তর: সহজভাবে বলতে গেলে, authentication হল কেউ কে তা যাচাই করার প্রক্রিয়া, যেখানে authorization হল ব্যবহারকারীর কোন নির্দিষ্ট অ্যাপ্লিকেশন, ফাইল এবং ডেটাতে অ্যাক্সেস রয়েছে তা যাচাই করার প্রক্রিয়া। authentication প্রক্রিয়ায়, সিস্টেমে অ্যাক্সেস প্রদানের জন্য ব্যবহারকারীদের পরিচয় পরীক্ষা করা হয়। যখন authorization হল তাদের কী অ্যাক্সেস আছে তা যাচাই করার প্রক্রিয়া।</p>
-            <h3>***Why are you using firebase? What other options do you have to implement authentication?</h3>
-            <p>Google Firebase ব্যবহার করার কারণ হল একটি অ্যাপ্লিকেশন ডেভেলপমেন্ট প্ল্যাটফর্ম যা ডেভেলপারদের iOS, Android এবং ওয়েব অ্যাপ তৈরি করতে দেয়। সাধারণত, একটি সার্ভার দ্বারা authentication একটি ব্যবহারকারীর নাম এবং পাসওয়ার্ড ব্যবহার entails । Authentication অন্যান্য উপায়গুলি কার্ড, রেটিনা স্ক্যান, ভয়েস রিকগনিশন এবং আঙ্গুলের ছাপের মাধ্যমে হতে পারে।</p>
-            <h3>***What other services does firebase provide other than authentication</h3>
-            <p>1. Parse – Open Source Backend Platform; 2. Back4app – Parse Hosting Platform; 3. Kinvey – Mobile Backend as a Service (mBaaS) for the Enterprise; 4. Backendless – Mobile Backend and API Services Platform; 5. Kuzzle – Backend for web, hybrid, or native mobile apps and IoT projects; 6. Pubnub – Real-time APIs and Global Messaging; 7. Kumulos – App Performance Management; 8. Game Sparks – Game Backend Platform; 9. Hoodie – Generic backend with a client API for Offline First applications; 10. Appwrite – Open-Source backend for Flutter developers</p>
+            <h2>Difference between javascript and nodejs:</h2>
+            <p>Javascript:</p>
+            <p>JavaScript is a language that runs inside web browsers as part of the documents loaded by the browser and is used as a client-side development language. It provides the behavior of the pages. Like HTML it provides the semantic structure and CSS the look and feel.</p>
+            <p>node.js:</p>
+            <p>NodeJs is an open source, cross-platform environment that allows you to create server-side applications and tools using JavaScript.</p>
+            <h2>Differences between sql and nosql databases:</h2>
+            <p>SQL pronounced as “S-Q-L” or as “See-Quel” is primarily called RDBMS or Relational Databases whereas NoSQL is a Non-relational or Distributed Database.
+
+                Comparing SQL vs NoSQL database, SQL databases are table based databases whereas NoSQL databases can be document based, key-value pairs, graph databases.
+                SQL databases are vertically scalable while NoSQL databases are horizontally scalable.
+                SQL databases have a predefined schema whereas NoSQL databases use dynamic schema for unstructured data.
+                Comparing NoSQL vs SQL performance, SQL requires specialized DB hardware for better performance while NoSQL uses commodity hardware.</p>
+
         </div>
     );
 };

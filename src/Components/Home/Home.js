@@ -1,5 +1,5 @@
 import React from 'react';
-import Services from './Services/Services';
+import Items from './Items/Items';
 import Banner from '../../Images/Banner.png';
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
             </div>
 
 
-            <Services></Services>
+            <Items></Items>
         </div>
 
     );
