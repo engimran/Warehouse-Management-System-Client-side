@@ -8,7 +8,7 @@ const ItemDetails = () => {
     const [item, setItem] = useState([]);
 
     const handleDecrement = () => {
-        const url = `http://localhost:5000/itemsQty/${itemId}?oldQuantity=${itemsQty.quantity}`;
+        const url = `https://guarded-retreat-88426.herokuapp.com/itemsQty/${itemId}?oldQuantity=${itemsQty.quantity}`;
 
         fetch(url, {
             method: 'PUT',
@@ -27,7 +27,7 @@ const ItemDetails = () => {
         navigated(`/item/${itemId}`);
     }
     useEffect(() => {
-        const url = `http://localhost:5000/itemsQty/${itemId}`;
+        const url = `https://guarded-retreat-88426.herokuapp.com/itemsQty/${itemId}`;
 
         fetch(url)
             .then(res => res.json())
