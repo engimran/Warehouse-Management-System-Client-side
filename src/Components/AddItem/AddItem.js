@@ -5,7 +5,7 @@ const AddItem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `https://guarded-retreat-88426.herokuapp.com/itemsQty`;
+        const url = `http://localhost:5000/itemsQty`;
         fetch(url, {
             method: 'POST',
             headers: {

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ManageItem = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('https://guarded-retreat-88426.herokuapp.com/itemsQty')
+        fetch('http://localhost:5000/itemsQty')
             .then(res => res.json())
             .then(data => setItems(data));
     }, [])
@@ -12,7 +12,7 @@ const ManageItem = () => {
         const proceed = window.confirm('Are you sure');
         console.log(handleDelete)
         if (proceed) {
-            const url = `https://guarded-retreat-88426.herokuapp.com/itemsQty/${id}`
+            const url = `http://localhost:5000/itemsQty/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -30,7 +30,8 @@ const ManageItem = () => {
             <h1>Manage Item</h1>
             {
                 items.map(item => <div key={item._id}>
-                    <h3>{item.name} <button onClick={() => handleDelete(item._id)}>X</button></h3>
+
+                    <h3>{item.name}<button onClick={() => handleDelete(item._id)}>X</button></h3>
 
                 </div>)
             }

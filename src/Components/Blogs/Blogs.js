@@ -16,6 +16,11 @@ const Blogs = () => {
                 SQL databases have a predefined schema whereas NoSQL databases use dynamic schema for unstructured data.
                 Comparing NoSQL vs SQL performance, SQL requires specialized DB hardware for better performance while NoSQL uses commodity hardware.</p>
 
+            <h2>What is the purpose of jwt and how does it work</h2>
+            <p>JWTs differ from other web tokens in that they contain a set of claims. Claims are used to transmit information between two parties. What these claims are depends on the use case at hand. For example, a claim may assert who issued the token, how long it is valid for, or what permissions the client has been granted.
+
+                A JWT is a string made up of three parts, separated by dots (.), and serialized using base64. In the most common serialization format, compact serialization, the JWT looks something like this: xxxxx.yyyyy.zzzzz.</p>
+
         </div>
     );
 };
