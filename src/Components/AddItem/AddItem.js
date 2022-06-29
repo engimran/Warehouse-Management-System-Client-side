@@ -8,19 +8,21 @@ const AddItem = () => {
     const { register, handleSubmit } = useForm();
     const [user] = useAuthState(auth);
     const onSubmit = data => {
-        console.log(data);
-        const url = `http://localhost:5000/itemsQty`;
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(result => {
-                console.log(result)
+        const proceed = window.confirm('Are you sure');
+        if (proceed) {
+            const url = `http://localhost:5000/itemsQty`;
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
             })
+                .then(res => res.json())
+                .then(result => {
+                    console.log(result)
+                })
+        }
     };
 
     return (

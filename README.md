@@ -3,3 +3,4 @@
 Manage inventory
 ● MongoDB database and Node Express server integrated with Front
 End UI and CRUD operation implemented
+● User wise item manage implemented
