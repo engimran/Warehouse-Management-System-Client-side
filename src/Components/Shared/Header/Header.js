@@ -12,7 +12,7 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" sticky='top' >
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top' >
             <Container>
                 <Navbar.Brand as={Link} to="/"><img height={50} src={Logo} alt="" /> <span className='fw-bold'>DAILY NEEDS</span> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
